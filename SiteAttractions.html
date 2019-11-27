@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
 
-<head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha256-rFMLRbqAytD9ic/37Rnzr2Ycy/RlpxE5QH52h7VoIZo=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="HomePage.html">Albanian Alps</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="HomePage.html">Home </a>
+          </li>
 
-</head>
-<body>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Guides</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="SiteAttractions.html">Site Attractions<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="trip search"
+            aria-label="Search"
+          />
 
-        <header>
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                  <a class="navbar-brand" href="HomePage.html">Albanian Alps</a>
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="HomePage.html"
-                          >Home <span class="sr-only">(current)</span></a
-                        >
-                      </li>
-                      
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Guides</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="SiteAttractions.html">Site Attractions</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">Contact</a>
-                      </li>
-                    </ul>
-                    <form class="form-inline mt-2 mt-md-0">
-                      <input
-                        class="form-control mr-sm-2"
-                        type="text"
-                        placeholder="Search trip"
-                        aria-label="Search"
-                      />
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                        Search 
-                      </button>
-                    </form>
-                  </div>
-                </nav>
-              </header>   
-<!-- START THE FEATURETTES -->
+        </form>
+      </div>
+    </nav>
+
+ <!-- START THE FEATURETTES -->
 <link href="carousel.css" rel="stylesheet" />
 <hr class="featurette-divider" />
 
