@@ -86,6 +86,10 @@
         user-select: none;
       }
 
+      .dropdown:hover>.dropdown-menu {
+      display: block;
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -124,11 +128,18 @@
             <li class="nav-item">
               <a class="nav-link " href="#">Site Attractions</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">Services</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Services.html"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="">Car Rentals</a>
+                    <a class="dropdown-item" href="#">Accomodiation</a>
+                </div>
+                
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">About</a>
+                <a class="nav-link " href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="contact.html">Contact</a>
