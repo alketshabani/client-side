@@ -51,13 +51,16 @@
     .mr-sm-2, .mx-sm-2{
       border-radius: 1rem;
     }
-    
+    /* for the dropdown of menu items {alket} */ 
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+      }  
 
     </style>
     
   </head>
 
-  <body>
+  <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="HomePage.html">Albanian Alps</a>
       <button
@@ -73,26 +76,48 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="HomePage.html">Home </a>
-          </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#">Guides</a>
+            <a class="nav-link" href="HomePage.html"
+              >Home </a
+            >
           </li>
-          <li class="nav-item active">
-            <a class="nav-link " href="SiteAttractions.html">Site Attractions<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Services</a>
+          
+          <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Guides
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="1dayvalbone.html">1 day trip to Valbone</a>
+                <a class="dropdown-item" href="#">2 day trip to Theth</a>
+                <a class="dropdown-item" href="#">1 day trip to Lugina e Shales</a>
+                
+            </div>
+          <li class="nav-item dropdown active"> 
+              <a class="nav-link dropdown-toggle" href="#"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Site Attractions<span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="Theth.html">Theth</a>
+                  <a class="dropdown-item" href="#">Valbone</a>
+                  <a class="dropdown-item" href="#">Bajram Curri</a>
+                  <a class="dropdown-item" href="#">Lugina e Shales</a>
+              </div>
+          <!-- for the dropdown of menu items {alket} -->
+          <li class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="Services.html"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="">Car Rentals</a>
+                  <a class="dropdown-item" href="#">Accomodiation</a>
+              </div>
+              
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">About</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="contact.html"
-              >Contact</a
-            >
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
@@ -102,10 +127,11 @@
             placeholder="trip search"
             aria-label="Search"
           />
-
+          
         </form>
       </div>
     </nav>
+  </header>
 
     <div class="container marketing">
  <!-- START THE FEATURETTES -->
@@ -126,7 +152,7 @@
     </p>
   </div>
   <div class="col-md-5">
-    <svg
+    <img
       class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
       width="500"
       height="500"
@@ -135,10 +161,12 @@
       focusable="false"
       role="img"
       aria-label="Placeholder: 500x500"
+      src="theth1.jpg"
     >
+    
       <title>Placeholder</title>
       <rect width="100%" height="100%" fill="#eee" />
-      <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+      <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
     </svg>
   </div>
 </div>
@@ -159,7 +187,7 @@
     </p>
   </div>
   <div class="col-md-5 order-md-1">
-    <svg
+    <img
       class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
       width="500"
       height="500"
@@ -168,10 +196,11 @@
       focusable="false"
       role="img"
       aria-label="Placeholder: 500x500"
+      src="theth2.jpg"
     >
       <title>Placeholder</title>
       <rect width="100%" height="100%" fill="#eee" />
-      <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+      
     </svg>
   </div>
 </div>
