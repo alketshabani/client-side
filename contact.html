@@ -70,13 +70,13 @@
                 </li>
                 
                 <li class="nav-item dropdown"> 
-                  <a class="nav-link dropdown-toggle" href="Guides.html"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Guides
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="1dayvalbone.html">1 day trip to Valbone</a>
-                      <a class="dropdown-item" href="#">2 day trip to Theth</a>
-                      <a class="dropdown-item" href="#">1 day trip to Lugina e Shales</a>
+                      <a class="dropdown-item" href="guides/1dayvalbone.html">1 day trip to Valbone</a>
+                      <a class="dropdown-item" href="guides/2daytheth.html">2 day trip to Theth</a>
+                      <a class="dropdown-item" href="guides/1dayluginashales.html">1 day trip to Lugina e Shales</a>
                       
                   </div>
                 <li class="nav-item dropdown "> 
@@ -91,13 +91,13 @@
                     </div>
                 <!-- for the dropdown of menu items {alket} -->
                 <li class="nav-item dropdown"> 
-                    <a class="nav-link dropdown-toggle" href="Services.html"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="">Car Rentals</a>
-                        <a class="dropdown-item" href="#">Accomodiation</a>
-                    </div>
+                  <a class="nav-link dropdown-toggle" href="services/Services.html"navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="services/CarRental.html">Car Rentals</a>
+                      <a class="dropdown-item" href="services/Accomodation.html">Accomodiation</a>
+                  </div>
                     
                 </li>
                 <li class="nav-item">
@@ -168,7 +168,20 @@
 			          			uiLibrary: 'bootstrap4'
 			          		});
 			          	</script>
-			          	</div>
+                  </div>
+                  <!-- trip type -->
+				        <div class="form-group">
+                  <label class="col-md-3 control-label" for="triptype">Trip type:</label>
+                   <div class="col-md-9">
+                     <select class="form-control">
+                      <option value="" selected disabled>Please select</option>
+                     <option>1 day trip to Valbone</option>
+                     <option>2 day trip to Theth</option>
+                     <option>1 day trip to Lugine e Shales</option>
+                     <option >Other</option>
+                     </select>
+                   </div>
+                   </div>
                 <!-- Message body -->
                 <div class="form-group">
                   <label class="col-md-3 control-label" for="message"
