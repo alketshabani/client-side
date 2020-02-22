@@ -1,9 +1,7 @@
-<!-- <link
-  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  rel="stylesheet"
-  id="bootstrap-css"
-/> -->
-
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
 <link
   rel="stylesheet"
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,7 +17,8 @@
   href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
 />
 <link href="RegisterPage.css" rel="stylesheet" />
-
+</head>
+<body>
 <div class="container">
   <br />
 
@@ -40,18 +39,13 @@
       <p class="divider-text">
         <span class="bg-light">OR</span>
       </p>
-      <form>
+       <form method="post" action="register.php">
+		<?php include('errors.php'); ?>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
-          <input
-           id="name"
-            name=""
-            class="form-control"
-            placeholder="Full name"
-            type="text"
-          />
+		    	  <input type="text" placeholder="Username" class="form-control" name="username" value="<?php echo $username; ?>">
         </div>
         <!-- form-group// -->
         <div class="form-group input-group">
@@ -60,32 +54,7 @@
               <i class="fa fa-envelope"></i>
             </span>
           </div>
-          <input
-            name=""
-            class="form-control"
-            placeholder="Email address"
-            type="email"
-            id= "email"
-          />
-        </div>
-        <!-- form-group// -->
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-          </div>
-          <select class="custom-select" style="max-width: 120px;">
-            <option selected="">+420</option>
-            <option value="1">+42</option>
-            <option value="2">+355</option>
-            <option value="3">+701</option>
-          </select>
-          <input
-            name=""
-            class="form-control"
-            placeholder="Phone number"
-            type="text"
-            id ="phoneNumber"
-          />
+		   <input type="email" placeholder="Email address" class="form-control" name="email" value="<?php echo $email; ?>">
         </div>
         <!-- form-group// -->
         <div class="form-group input-group">
@@ -100,6 +69,7 @@
           <input
             class="form-control"
             placeholder="Create password"
+			name="password_1"
             type="password"
             id= "password"
           />
@@ -114,11 +84,12 @@
             placeholder="Repeat password"
             type="password"
             id="cpassword"
+			name="password_2"
           />
         </div>
         <!-- form-group// -->
         <div class="form-group">
-          <button type="submit" class="btn btn-primary  btn-block">
+          <button type="submit" name="reg_user" class="btn btn-primary  btn-block">
             Register
           </button>
         </div>
@@ -135,38 +106,6 @@
 
 </div>
 
-<!-- api post call for register form -->
-<script>
-$(document).ready(function () {
-        $("#register").click(function () {
-            var name = $("#name").val();
-            var email = $("#email").val();
-            var phoneNr = $("#phoneNumber").val();
-            var password = $("#password").val();
-            var cpassword = $("#cpassword").val();
-            if (name == '' || email == '' || password == '' || cpassword == '' || phoneNr == '') {
-                alert("Please fill all fields...!!!!!!");
-            } else if ((password.length) < 8) {
-                alert("Password should atleast 8 character in length...!!!!!!");
-            } else if (!(password).match(cpassword)) {
-                alert("Your passwords don't match. Try again?");
-            } else {
-                $.post("register.php", {
-                    name1: name,
-                    email1: email,
-                    phoneNr1: phoneNr,
-                    password1: password
-                }, function (data) {
-                    if (data == 'You have Successfully Registered.....') {
-                        $("form")[0].reset();
-                    }
-                    alert(data);
-                });
-            }
-        });
-    });
-
-    </script>
-
-
+</body>
+</html>
 
