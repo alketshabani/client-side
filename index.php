@@ -103,7 +103,7 @@
 
       <!-- navbar with logo {fati} -->
      <nav class=" navbar navbar-expand-lg  navbar-dark fixed-top bg-dark">
-       <a class="navbar-brand" href="index.html" ><img src="alb_mount.png" width="50" height="50">Albanian Alps</a>
+       <a class="navbar-brand" href="index.php" ><img src="alb_mount.png" width="50" height="50">Albanian Alps</a>
 
         <button
           class="navbar-toggler"
@@ -119,7 +119,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"
+              <a class="nav-link" href="index.php"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
@@ -210,7 +210,7 @@
                   Join us for the trip of your life
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="RegisterPage.html" role="button"
+                  <a class="btn btn-lg btn-primary" href="register.php" role="button"
                     >Sign up today</a
                   >
                 </p>
