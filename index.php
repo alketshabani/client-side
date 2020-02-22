@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	//$_SESSION['msg'] = "You must log in first";
+  	//header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -156,7 +169,12 @@
                 placeholder="trip search"
                 aria-label="Search"
               />
-              
+			   <!-- logged in user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+    	 <a href="index.php?logout='1'" class="btn btn-primary">logout</a> 
+		 <?php else: ?>
+			  <a class="btn btn-primary" href="login.php" role="button" >Login</a>
+    <?php endif ?>
             </form>
         </div>
       </nav>
